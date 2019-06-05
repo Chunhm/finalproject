@@ -24,7 +24,7 @@ The toughest part was attempting to detect the object hitting the obstacle and m
     }
   }
 ```
-This is the code that moves the obstacle, which is a rectangle from right to left. It is able to reset to the other side of the screen as well. The colors on the pillar interchange between colors in the R, G and B int variables.
+This is the code that moves the obstacle, which is a rectangle from right to left. It is able to reset to the other side of the screen as well. The colors on the pillar interchange between colors in the R, G and B int variables. Also you can change the commented out xspeed and make the game more difficult.
 ## Built With
 
 * [Processing](https://processing.org/) - The IDE used
