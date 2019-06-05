@@ -31,7 +31,8 @@ This is the code that moves the obstacle, which is a rectangle from right to lef
 
 ## Authors
 
-* **Mikayla Chunh & Jenna Fox** 
+* **Mikayla Chunh**
+* **Jenna Fox** 
 
 ## Acknowledgments
 
