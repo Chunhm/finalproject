@@ -4,38 +4,34 @@
 
 ### Difficulties or opportunities you encountered along the way.
 
-The toughest part was...
+The toughest part was attempting to detect the object hitting the obstacle and making it say you loose. Another difficult aspect was creating the pillar obstacle and getting it to move. Also adding in the multiple changing colors of the Pillar to make it pop. 
 
 ### Most interesting piece of your code and explanation for what it does.
 
 ```Java
-void keyPressed() {
-if (keyCode == LEFT) {
-   tree= tree.getLeft();
-   System.out.println(tree.getValue());
-   String s=(String)tree.getValue();
-   fill(155);
-   textSize(50);
-} else if (keyCode == RIGHT) {
-   tree = tree.getRight();
-   System.out.println(tree.getValue());
-   String s=(String)tree.getValue();
-   fill(155);
-   textSize(50);
-} else if (tree.getLeft()==null&&tree.getRight()==null) {
-   System.out.println(tree.getValue());
-   tree=t.returnTree();
-}
-}
+  public void show2() {
+    noStroke();  
+    int R =(int)(Math.random( )*200);
+    int G =(int)(Math.random( )*200);
+    int B =(int)(Math.random( )*200);
+    fill(R,G,B);
+    rect(x2, y2, 60, 100);
+    x2-=xspeed;
+    if(x2<-60){
+      x2=width+30;
+      //xspeed=(int)(Math.random()*3)+1;
+      xspeed=4;
+    }
+  }
 ```
-This is the code that moves down the tree as decisions are made. It gets each value from both left and right and also casts the value to a String. If the progressions arrives at the leaf nodes, those values are printed.
+This is the code that moves the obstacle, which is a rectangle from right to left. It is able to reset to the other side of the screen as well. The colors on the pillar interchange between colors in the R, G and B int variables.
 ## Built With
 
 * [Processing](https://processing.org/) - The IDE used
 
 ## Authors
 
-* **Billie Thompson** 
+* **Mikayla Chunh & Jenna Fox** 
 
 ## Acknowledgments
 
