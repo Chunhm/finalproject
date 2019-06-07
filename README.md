@@ -36,6 +36,6 @@ This is the code that moves the obstacle, which is a rectangle from right to lef
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* Example Code
+* http://www.edu4java.com/en/game/game6.html
+* Coding Video Games in Java Videos on Youtube
